@@ -1,12 +1,14 @@
-from tkinter import *
+from gui import *
 
 
-class App:
-    def __init__(self):
-        self.janela = Tk()
-        self.janela.geometry("1000x650")
+while True:
+    numero = int(input("Informe: "))
 
-        self.janela.mainloop()
-
-
-app = App()
+    if numero == 1:
+        numero = int(input("Informe: "))
+        janela1 = Janela1()
+    elif numero == 2:
+        janela1.window.destroy()
+        janela2 = Janela2()
+    elif numero == 0:
+        break
