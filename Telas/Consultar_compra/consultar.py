@@ -16,6 +16,7 @@ class Screen_consultar:
 
         self.window.geometry("1000x650")
         self.window.configure(bg = "#F9AAD0")
+        self.window.title("Ticket System - TODOS OS INGRESSOS VENDIDOS, SÃO PARA O DIA DA COMPRA!")
 
 
         self.canvas = Canvas(
