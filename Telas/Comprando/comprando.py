@@ -101,8 +101,9 @@ class Screen_comprando:
             height=44.0
         )
 
+        self.caminho_imagem = ""
         self.button_image_5 = PhotoImage(
-            file=relative_to_assets("button_5.png"))
+            file=self.caminho_imagem)
         self.button_5 = Button(
             image=self.button_image_5,
             borderwidth=0,
@@ -187,7 +188,4 @@ class Screen_comprando:
             font=("Inter", 24 * -1)
         )
         self.window.resizable(False, False)
-        self.window.mainloop()
 
-
-app = Screen_comprando()

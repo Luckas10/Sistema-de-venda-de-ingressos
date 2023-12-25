@@ -17,7 +17,7 @@ ASSETS_PATH = OUTPUT_PATH / Path(r"./Images")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-class App:
+class Screen_Login:
     def __init__(self):
         self.window = Tk()
 
@@ -58,7 +58,6 @@ class App:
             image=self.button_image_1,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_1 clicked"),
             relief="flat"
         )
         self.button_1.place(
@@ -82,26 +81,6 @@ class App:
             highlightthickness=0
         )
         self.entry_1.place(
-            x=71.0,
-            y=320.0,
-            width=272.0,
-            height=42.0
-        )
-
-        self.entry_image_2 = PhotoImage(
-            file=relative_to_assets("entry_2.png"))
-        self.entry_bg_2 = self.canvas.create_image(
-            207.0,
-            342.0,
-            image=self.entry_image_2
-        )
-        self.entry_2 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_2.place(
             x=71.0,
             y=320.0,
             width=272.0,
@@ -143,7 +122,4 @@ class App:
             image=self.image_image_2
         )
         self.window.resizable(False, False)
-        self.window.mainloop()
 
-
-aplicar = App()
