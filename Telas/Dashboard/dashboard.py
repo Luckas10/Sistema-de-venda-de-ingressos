@@ -185,15 +185,6 @@ class Screen_Dashboard:
         )
 
         self.canvas.create_text(
-            437.0,
-            503.0,
-            anchor="nw",
-            text="Sugestões de filmes para o cartaz:",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
-
-        self.canvas.create_text(
             425.0,
             69.0,
             anchor="nw",
@@ -201,27 +192,7 @@ class Screen_Dashboard:
             fill="#FFFFFF",
             font=("OpenSansRoman Bold", 44 * -1)
         )
-
-        self.entry_image_1 = PhotoImage(
-            file=relative_to_assets("entry_1.png"))
-        self.entry_bg_1 = self.canvas.create_image(
-            635.0,
-            564.0,
-            image=self.entry_image_1
-        )
-        self.entry_1 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_1.place(
-            x=432.0,
-            y=542.0,
-            width=406.0,
-            height=42.0
-        )
-
+        
         self.image_image_1 = PhotoImage(
             file=relative_to_assets("image_1.png"))
         self.image_1 = self.canvas.create_image(

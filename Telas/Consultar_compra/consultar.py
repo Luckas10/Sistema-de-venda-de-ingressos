@@ -47,12 +47,6 @@ class Screen_consultar:
             command=lambda: print("button_1 clicked"),
             relief="flat"
         )
-        self.button_1.place(
-            x=358.0,
-            y=267.0,
-            width=150.0,
-            height=244.0
-        )
 
         self.button_image_2 = PhotoImage(
             file=relative_to_assets("button_2.png"))
@@ -62,12 +56,6 @@ class Screen_consultar:
             highlightthickness=0,
             command=lambda: print("button_2 clicked"),
             relief="flat"
-        )
-        self.button_2.place(
-            x=579.0,
-            y=457.0,
-            width=332.0,
-            height=54.0
         )
 
         self.button_image_3 = PhotoImage(
@@ -86,59 +74,6 @@ class Screen_consultar:
             height=44.0
         )
 
-        self.canvas.create_text(
-            579.0,
-            267.0,
-            anchor="nw",
-            text="Sala:",
-            fill="#FFFFFF",
-            font=("Inter", 26 * -1)
-        )
-
-        self.canvas.create_text(
-            802.0,
-            268.0,
-            anchor="nw",
-            text="Horário:",
-            fill="#FFFFFF",
-            font=("Inter", 26 * -1)
-        )
-
-        self.canvas.create_text(
-            588.0,
-            297.0,
-            anchor="nw",
-            text="nº",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
-
-        self.canvas.create_text(
-            833.0,
-            297.0,
-            anchor="nw",
-            text="nº",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
-
-        self.canvas.create_text(
-            687.0,
-            365.0,
-            anchor="nw",
-            text="Cadeira:",
-            fill="#FFFFFF",
-            font=("Inter", 26 * -1)
-        )
-
-        self.canvas.create_text(
-            630.0,
-            395.0,
-            anchor="nw",
-            text="Ordem de chegada",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
 
         self.entry_image_1 = PhotoImage(
             file=relative_to_assets("entry_1.png"))
