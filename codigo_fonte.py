@@ -86,6 +86,9 @@ class App:
 
         self.janela = Screen_Login()
 
+        self.janela.button_1.configure(command=lambda: self.informar_tela(
+            tela="Dashboard_login", nomePerfil=self.janela.entry_1.get()))
+
 
     def concluida(self, filme=""):
         self.janela.window.destroy()
