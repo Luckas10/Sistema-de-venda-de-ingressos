@@ -37,8 +37,9 @@ class Screen_concluida:
             fill="#AD53A6",
             outline="")
 
+        self.caminho_imagem = ""
         self.button_image_1 = PhotoImage(
-            file=relative_to_assets("button_1.png"))
+            file=self.caminho_imagem)
         self.button_1 = Button(
             image=self.button_image_1,
             borderwidth=0,
@@ -169,7 +170,4 @@ class Screen_concluida:
             font=("OpenSansRoman Bold", 44 * -1)
         )
         self.window.resizable(False, False)
-        self.window.mainloop()
 
-
-app = Screen_concluida()

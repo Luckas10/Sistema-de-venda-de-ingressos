@@ -9,8 +9,8 @@ ASSETS_PATH = OUTPUT_PATH / Path(r"./Images")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-class App:
-    def __init__(self):
+class Screen_Dashboard:
+    def __init__(self, nome_perfil):
         self.window = Tk()
 
         self.window.geometry("1000x650")
@@ -173,11 +173,12 @@ class App:
             font=("Inter", 22 * -1)
         )
 
+        self.nomePerfil = nome_perfil
         self.canvas.create_text(
             106.0,
             71.0,
             anchor="nw",
-            text="{nome}",
+            text=self.nomePerfil,
             fill="#FFFFFF",
             font=("Inter", 22 * -1)
         )
@@ -228,7 +229,4 @@ class App:
             image=self.image_image_1
         )
         self.window.resizable(False, False)
-        self.window.mainloop()
-
-
-aplicar = App()
+        

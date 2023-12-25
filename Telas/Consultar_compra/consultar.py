@@ -232,7 +232,4 @@ class Screen_consultar:
             height=44.0
         )
         self.window.resizable(False, False)
-        self.window.mainloop()
-
-
-app = Screen_consultar()
+        
