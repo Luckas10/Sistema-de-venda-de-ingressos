@@ -3,6 +3,7 @@ from Telas .Dashboard .dashboard import *
 from Telas .Comprando .comprando import *
 from Telas .Compra_concluída .concluida import *
 from Telas .Consultar_compra .consultar import *
+from funcoes_db import *
 
 
 OUTPUT_PATH = Path(__file__).parent
@@ -15,6 +16,12 @@ def relative_to_assets(path: str) -> Path:
 
 class App:
     def __init__(self):
+        self.admin_list = listar_usuarios("Admin_users", "Admin")
+        self.usuarios = dict()
+        self.ids = list()
+
+        self.search_users()
+
         self.janela = Screen_Login()
 
         self.nome = ""
@@ -31,6 +38,7 @@ class App:
 
         if tela == "Dashboard_login":
             self.nome = nomePerfil
+            self.append_user(self.nome)
             self.dashboard(nomePerfil=nomePerfil)
 
         elif tela == "Comprando":
@@ -219,6 +227,22 @@ class App:
             width=332.0,
             height=54.0
         )
+
+
+    def search_users(self):
+        for valor in self.admin_list:
+            self.ids.append(int(valor[0]))
+            self.usuarios[valor[1]] = valor[2]
+
+        
+    def append_user(self, username):
+        self.ids.append(self.ids[-1] + 1)
+        self.usuarios[f"user{self.ids[-1]}"] = username
+
+        self.values_users = (str(self.ids[-1]), str(f"user{self.ids[-1]}"), str(username))
+
+        adicionar_user("Admin_users", "Admin", self.values_users)
+        
 
 
 app = App()
