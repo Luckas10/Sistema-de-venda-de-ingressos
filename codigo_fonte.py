@@ -19,7 +19,7 @@ class App:
     def __init__(self):
         self.admin_list = listar_usuarios("Admin_users", "Admin")
         self.usuarios = dict()
-        self.ids = list()
+        self.ids = [0]
 
         self.search_users()
         print(self.usuarios)
@@ -135,7 +135,7 @@ class App:
 
 
         self.janela.canvas.create_text(
-            588.0,
+            600.0,
             233.0,
             anchor="nw",
             text=dados_filme["sala"],
@@ -144,7 +144,7 @@ class App:
         )
 
         self.janela.canvas.create_text(
-            833.0,
+            812.0,
             233.0,
             anchor="nw",
             text=dados_filme["horario"],
