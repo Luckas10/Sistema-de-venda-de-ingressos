@@ -1,6 +1,6 @@
-# Ticket System
+# 🎟 Ticket System
 
-**Ticket System** is a basic project developed as part of the Object-Oriented Programming (OOP) course at [school name]. The system simulates a ticket sales system for a cinema, allowing users to choose movies, buy tickets, and view information about their purchases.
+**Ticket System** is a basic project developed as part of the Object-Oriented Programming (OOP) course at IFRN - Campus Caicó. The system simulates a ticket sales system for a cinema, allowing users to choose movies, buy tickets, and view information about their purchases.
 
 ## Key Features
 
