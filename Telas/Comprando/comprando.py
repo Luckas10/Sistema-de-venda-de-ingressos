@@ -154,24 +154,6 @@ class Screen_comprando:
         )
 
         self.canvas.create_text(
-            588.0,
-            233.0,
-            anchor="nw",
-            text="nº",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
-
-        self.canvas.create_text(
-            833.0,
-            233.0,
-            anchor="nw",
-            text="nº",
-            fill="#FFFFFF",
-            font=("Inter", 24 * -1)
-        )
-
-        self.canvas.create_text(
             687.0,
             301.0,
             anchor="nw",

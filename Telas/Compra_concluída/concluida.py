@@ -89,15 +89,6 @@ class Screen_concluida:
             font=("Inter", 24 * -1)
         )
 
-        self.canvas.create_text(
-            656.0,
-            423.0,
-            anchor="nw",
-            text="#123456",
-            fill="#000000",
-            font=("Inter", 24 * -1)
-        )
-
         self.button_image_3 = PhotoImage(
             file=relative_to_assets("button_3.png"))
         self.button_3 = Button(
