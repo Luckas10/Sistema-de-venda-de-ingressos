@@ -4,7 +4,7 @@
 
 ## Key Features
 
-- **User Login and Registration:** Users can log in or create new accounts to access the system.
+- **User Login:** Users can log in or create new accounts to access the system.
 
 - **Dashboard:** After logging in, users are directed to a main dashboard where they can navigate through different functionalities.
 
