@@ -10,8 +10,6 @@
 
 - **Ticket Purchase:** Users can select available movies and buy tickets for specific sessions.
 
-- **Purchase History:** Users can view the history of their purchases, including details such as room, time, and ticket number.
-
 - **Purchase Inquiry:** Users can inquire about their purchases using the ticket number, checking details such as room, time, and seat.
 
 ## Technologies Used
